@@ -1,0 +1,2614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="html" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+	<title>MNG-Pandora Manager, Admin | Homepage</title>
+
+	<!-- turns on responsive features of bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- additional styles!!!! -->
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<!-- site default styles!!!! -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/site-default.css"/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/fam.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="js/select2/select2.min.css"/>
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/jquery.cluetip.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/jquery.impromptu.css"/>
+	<link rel="stylesheet" type="text/css" href="js/jquery.chosen/chosen.css"/>
+</head>
+
+<body id="home">
+	<div id="bdy_content">
+
+		<!-- Top Search Bar -->
+		<div class="headerInfo">
+			<div id="welcome">
+				<!-- <div id="timeIndex" class="cTime">Current: 03/25, 00:01 GMT | Last Updated: 03/24, 23:00 GMT</div> -->
+			</div>
+			<!-- wiki search menu -->
+			<div id="wikiSearch" class="wikiSearch">
+				<!-- search box -->
+				<div id="pagetreesearch">
+					<form target="_blank" method="POST" class="aui" action="https://support.admarvel.com/plugins/pagetreesearch/pagetreesearch.action" name="pagetreesearchform">
+						<input type="hidden" name="ancestorId" value=""/>
+						<input type="hidden" name="spaceKey" value=""/>
+						<input type="text" class="form-control input-xs text medium-field textsearchfiled" size="20" placeholder="Quick Search" name="queryString"/>
+					   <!--  <span class="input-group-btn">
+							<input type="submit" class="btn btn-primary btn-xs aui-button" value="Search"/>
+						</span> -->
+					</form>
+					<!-- <span class="help-link"><a id="help-link-info" target="_blank" href="https://wiki.operamediaworks.com/display/AMS/Campaign+Manager+Overview#CampaignManagerOverview-ManageCampaigns">More on Manage Campaigns</a></span> -->
+				</div>
+
+				<!-- TimeZone dropdown -->
+				<div class="btn-group clock">
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="fa fa-clock-o"></i> <span class="fa fa-caret-down"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><span><strong>GMT Timezone</strong></span></li>
+						<li><span class="small"><small>Current Time: 03/25, 00:01 GMT</small></span></li>
+						<li><span class="small"><small>Last Updated: 03/24, 23:00 GMT</small></span></li>
+						<li class="divider"></li>
+						<li><span><strong>PST Timezone</strong></span></li>
+						<li><span class="small"><small>Current Time: 03/25, 15:01 PST</small></span></li>
+						<li><span class="small"><small>Last Updated: 03/24, 16:00 PST</small></span></li>
+						<li class="divider"></li>
+						<li><span><strong>EST Timezone</strong></span></li>
+						<li><span class="small"><small>Current Time: 03/25, 18:01 EST</small></span></li>
+						<li><span class="small"><small>Last Updated: 03/24, 19:00 EST</small></span></li>
+					</ul>
+				</div>
+				<!-- Help dropdown -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="fa fa-question-circle"></i> <span class="fa fa-caret-down"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="https://wiki.operamediaworks.com/x/fQM0AQ">Support Portal</a></li>
+						<li><a href="https://wiki.operamediaworks.com/x/Ogo0AQ">What's New?</a></li>
+						<li class="divider"></li>
+						<li><span><strong>About Admarvel</strong></span></li>
+						<li><span>AdMarvel v7.6.0</span></li>
+					</ul>
+				</div>
+
+			</div><!-- ends wiki search menu -->
+		</div><!-- ends .headerInfo -->
+
+	<!-- Navigation -->
+	<div id="header">
+			<!-- Logo -->
+			<a href="/homepage">
+				<img src="img/admarvel_logo_scaled2.png" alt="AdMarvel logo" name="frengologo" width="" height="" id="frengologo" class="frengologo"/>
+			</a>
+			<!-- mobile collapsable toggle menu button -->
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+			</button>
+	<div id="greenbottom" class="collapse navbar-collapse navCollapse">
+				<div id="tabs" class="clearfix">
+					<ul class="nav nav-tabs clearfix">
+						<li class="first current" >
+							<a title="Home" href="http://54.211.239.53/homepage.html" onClick="">
+								<i class="fa fa-home"> </i>
+								<span>Home</span>
+
+							</a>
+						</li>
+						<li class="" >
+							<a title="Ad Details" href="/addetails" onClick="">
+								<i class="fa fa-area-chart"> </i>
+								<span>Ad Details</span>
+							</a>
+						</li>
+						<li class="">
+							<a title="Traffic Analysis" href="http://54.211.239.53/analysis-countries.html">
+								<i class="fa fa-line-chart"> </i>
+								<span>Analysis</span>
+							</a>
+						</li>
+						<!--
+						<li class="">
+							<a title="Ad Revenue" href="/adpolicies" >
+							<span>Ad Policies</span>
+							</a>
+						</li>
+						-->
+						<li class="">
+							<a title="Campaigns" href="http://54.211.239.53/manage_campagins.html">
+								<i class="fa fa-bullhorn"> </i>
+								<span>Campaigns</span>
+							</a>
+						</li>
+						<li class="">
+							<a title="Traffic Management" href="/sitemgmt">
+								<i class="fa fa-cube"> </i>
+								<span>Management</span>
+							</a>
+						</li>
+						<li class="">
+							<a title="RTB" href="http://54.211.239.53/rtb-RTB-sites.html">
+								<i class="fa fa-thumbs-o-up"> </i>
+								<span>RTB</span>
+							</a>
+						</li>
+						<li class="">
+							<a title="Inventory" href="http://54.211.239.53/inventory-historicalfill.html" >
+								<i class="fa fa-suitcase"> </i>
+								<span>Inventory</span>
+							</a>
+						</li>
+						<li class="">
+							<a title="Custom Report" href="http://54.211.239.53/reports-adnetworks.html">
+								<i class="fa fa-bar-chart"> </i>
+								<span>Reports</span>
+							</a>
+						</li>
+						<li class=" last">
+							<a title="Profile" href="http://54.211.239.53/profile-inventories.html"  onClick="">
+								<i class="fa fa-user"> </i>
+								<span>Profile</span>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- div#tabs ends here-->
+			</div> <!-- #greenbottom ends -->
+			</div>
+
+			<div id="login">
+				<div class="btn-group">
+					<button type="button" class="btn btn-link dropdown-toggle" data-toggle="" aria-expanded="false">
+					<i class="fa fa-user"></i> Pandora Manager <span class="fa fa-caret-down"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><span><strong>Switch Account:</strong></span></li>
+						<li>
+							<span>
+								<select class="form-control">
+									<option>Pandora Manager 1</option>
+									<option>Pandora Manager 2</option>
+									<option>Pandora Manager 3</option>
+									<option>Pandora Manager Test</option>
+								</select>
+							</span>
+						</li>
+						<li class="divider"></li>
+						<li><a href="/login">Logout</a></li>
+					</ul>
+				</div>
+			</div> <!-- #login ends -->
+
+		<!-- #main content starts -->
+		<div id="main">
+			<!-- Form starts here -->
+			<form name="frmReport" id="homePageForm" method="post" action="/homepage?submit=true" class="filtersForm clearfix">
+			<input type="hidden" id="group_by" name="groupby" value="group_by_publisher_report" />
+				<!-- Form: Site -->
+				<div id="sel_site" class="filters clearfix col-md-3" >
+					<div class="fields">
+						<div class="addetails_pad_zero">
+						<label for="zoneId">Site:</label>
+
+						<!-- <input type="hidden" name="data[Fam][zoneId]" value="-1" id="zoneId" />			 -->
+						<select NAME='data[Fam][zoneId]' ID='zoneId' class="form-control"  >
+							<option title='All sites' VALUE=''>All sites</option>
+						</select>
+						</div>
+					</div>
+				</div>
+
+
+			<input type="hidden" id="sel_zone_text" name="data[Fam][sel_zone_text]" value="All sites" />
+				<!-- Form: Date -->
+				<div id="sel_filters" class="filters clearfix col-md-2" >
+					<div class="field">
+						<div class="addetails_pad_zero">
+							<label for="date_options">Date:</label>
+							<!-- Date Selection Options -->
+							<select class="form-control" name="data[Fam][date_options]" id="date_options" onchange="javascript:populateStartEndDates(id);">
+								<option value="today" selected="selected">Today</option>
+								<option value="yesterday">Yesterday</option>
+								<option value="last_7_days">Last 7 days</option>
+								<option value="last_30_days" >Last 30 days</option>
+								<option value="this_month">This month</option>
+								<option value="specific">Specific dates</option>
+								<option value="last_month">Last month</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<!-- Form: From -->
+				<div class="col-md-3">
+					<label for="startdate">From:</label>
+						<div class="input-group">
+							<input name="data[Fam][startdate]" type="text" class="form-control date" value="03/16/15" size="20" id="startdate" disabled="disabled" />
+								<span class="input-group-btn"  onclick="return showCalendar('startdate', '%m/%d/%y', '24', true);">
+									<a id="startdate_popup" class="btn btn-info startdatebtn" style="" href="#">
+										<!-- <img alt="calendar" style="vertical-align:middle; " id="start_trigger" src="/alfonse/img/calendar.gif" border="0" onclick="return showCalendar('startdate', '%m/%d/%y', '24', true);" /> -->
+										<i class="fa fa-calendar" onclick="return showCalendar('startdate', '%m/%d/%y', '24', true);"></i>
+									</a>
+								</span>
+						</div>
+				</div>
+
+				<!-- Form: To -->
+				<div class="col-md-3">
+					<label for="enddate">To:</label>
+						<div class="input-group">
+							<input name="data[Fam][enddate]" type="text" class="form-control date" value="04/14/15" size="20" id="enddate" disabled="disabled" />
+								<span class="input-group-btn" onclick="return showCalendar('enddate', '%m/%d/%y', '24', true);">
+									<a id="enddate_popup" class="btn btn-info enddatebtn" style="" href="#">
+										<!-- <img alt="calendar" style="vertical-align:middle; " id="end_trigger" src="/alfonse/img/calendar.gif" border="0" onclick="return showCalendar('enddate', '%m/%d/%y', '24', true);" /> -->
+										<i class="fa fa-calendar" onclick="return showCalendar('enddate', '%m/%d/%y', '24', true);"></i>
+									</a>
+								</span>
+						</div>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="col-md-1">
+					<label for="enddate">&nbsp;</label>
+							<input type="hidden" name="data[Fam][startdate_hidden]" value="" style="display:none;" id="startdate_hidden" />					<input type="hidden" name="data[Fam][enddate_hidden]" value="" style="display:none;" id="enddate_hidden" />
+							<input id="formsubmitbutton" type="submit" name="formsubmitbutton" value="Submit" class="btn btn-primary stdButton" />
+							<input type="hidden" name="view_graph_default" id="view_graph_default" value="0"/>
+				</div>
+			</form><!-- end Form -->
+
+			<!-- start tables -->
+			<div class="tables">
+				<div class="tableoptions clearfix">
+				<div id="div_breakdown" class="groupbybtns pull-left">
+					<!-- <p><strong>Site Breakdown:</strong> <span class="daterange">(03/16/15 - 04/14/15)</span></p> -->
+					<span>Group By:  </span>
+					<a id="group_by_site_report_href" class="btn btn-link" href="#" onClick="_gaq.push(['_trackEvent', 'Home-GroupBySite-Link', 'GroupBySite-Clicks', 'Home-GroupBySite-'+Manager_Name_For_EventTracking+'--'+Account_Name_For_EventTracking]);">Site</a>
+					<!-- <span class="sep">|</span> -->
+					<a id="group_by_hour_report_href" class="btn btn-link" href="#" onClick="_gaq.push(['_trackEvent', 'Home-GroupByHour-Link', 'GroupByHour-Clicks', 'Home-GroupByHour-'+Manager_Name_For_EventTracking+'--'+Account_Name_For_EventTracking]);">Hour</a>
+					<!-- <span class="sep">|</span> -->
+					<a id="group_by_date_report1_href" class="btn btn-link" href="#" onClick="_gaq.push(['_trackEvent', 'Home-GroupByHour-Link', 'GroupByHour-Clicks', 'Home-GroupByHour-'+Manager_Name_For_EventTracking+'--'+Account_Name_For_EventTracking]);">Date</a>
+					<!-- <span class="sep">|</span> -->
+					<a id="group_by_publisher_report_href" class="btn btn-link current" href="#">Publisher</a>
+
+				</div>
+				<a href="#" class="btn btn-info exportbtn f_right"  data-toggle="tooltip" data-placement="top"><i class="fa fa-download"></i></a>
+
+
+			</div>
+
+			<img width="16" height="16" src="img/icn_help.gif" title="genericHelp" class="helpButton" alt="help">
+
+			<div id="group_by_site_report_div" style="display: none;"></div>
+			<div id="group_by_hour_report_div" style="display: none;"></div>
+			<div id="group_by_date_report1_div" style="display: none;"></div>
+			<div id="group_by_publisher_report_div" style="">
+
+			<!-- table content -->
+			<table width="100%" cellspacing="0" cellpadding="0" border="1" rel="done" class="table zebra" id="group_by_publisher_report" data-toggle="table">
+					<thead>
+					<tr>
+						<th class="first header headerSortDown" style="width: 32%;"><em>Publishers</em></th>
+						<th class="tablesorter_formattedNumbers header" style="width: 12%;"><em>Requests</em></th>
+						<th class="tablesorter_formattedNumbers header" style="width: 12%;"><em>Impressions</em></th>
+						<th class="tablesorter_formattedNumbers header" style="width: 8%;"><em>Fill Rate</em></th>
+						<th class="tablesorter_formattedNumbers header" style="width: 10%;"><em>Clicks</em></th>
+						<th class="tablesorter_formattedNumbers header" style="width: 8%;"><em>CTR</em></th>
+						<th class="tablesorter_currency header" style="width: 8%;"><em>eCPM</em></th>
+						<th class="last tablesorter_currency header" style="width: 10%;"><em>Revenue</em></th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6323">1test_aswini</label>
+							</td>
+							<td>6</td>
+							<td>1</td>
+							<td>16.67%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$30.60</td>
+							<td class="last">$0.03</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7093">365Scores</label>
+							</td>
+							<td>305,189</td>
+							<td>254,530</td>
+							<td>83.4%</td>
+							<td>3,273</td>
+							<td>1.29%</td>
+							<td>$0.84</td>
+							<td class="last">$214.62</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6029">Alpha Broadcasting</label>
+							</td>
+							<td>1,913</td>
+							<td>1,363</td>
+							<td>71.25%</td>
+							<td>1</td>
+							<td>0.07%</td>
+							<td>$0.64</td>
+							<td class="last">$0.88</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6325">Ashish</label>
+							</td>
+							<td>192</td>
+							<td>89</td>
+							<td>46.35%</td>
+							<td>21</td>
+							<td>23.60%</td>
+							<td>$6.11</td>
+							<td class="last">$0.54</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6495">Aswini Test pub</label>
+							</td>
+							<td>606</td>
+							<td>101</td>
+							<td>16.67%</td>
+							<td>31</td>
+							<td>30.69%</td>
+							<td>$16.88</td>
+							<td class="last">$1.71</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6030">AZLotus</label>
+							</td>
+							<td>299</td>
+							<td>288</td>
+							<td>96.32%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.57</td>
+							<td class="last">$0.16</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6032">Bahakel</label>
+							</td>
+							<td>66,615</td>
+							<td>38,798</td>
+							<td>58.24%</td>
+							<td>40</td>
+							<td>0.10%</td>
+							<td>$0.61</td>
+							<td class="last">$23.67</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5067">bam-test-RTB-pub</label>
+							</td>
+							<td>429</td>
+							<td>165</td>
+							<td>38.46%</td>
+							<td>24</td>
+							<td>14.55%</td>
+							<td>$7.20</td>
+							<td class="last">$1.19</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7105">BAM8Tracks</label>
+							</td>
+							<td>21,786,686</td>
+							<td>2,093,614</td>
+							<td>9.61%</td>
+							<td>10,122</td>
+							<td>0.48%</td>
+							<td>$4.02</td>
+							<td class="last">$8,425.26</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5662">BAM_4SM</label>
+							</td>
+							<td>288,835,736</td>
+							<td>27,715,310</td>
+							<td>9.6%</td>
+							<td>253,162</td>
+							<td>0.91%</td>
+							<td>$2.74</td>
+							<td class="last">$76,008.21</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6769">BAMAdcolony</label>
+							</td>
+							<td>116,408</td>
+							<td>245</td>
+							<td>0.21%</td>
+							<td>43</td>
+							<td>17.55%</td>
+							<td>$27.45</td>
+							<td class="last">$6.73</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5675">BAMAdfrap</label>
+							</td>
+							<td>3,995,457</td>
+							<td>324,422</td>
+							<td>8.12%</td>
+							<td>2,182</td>
+							<td>0.67%</td>
+							<td>$1.06</td>
+							<td class="last">$342.69</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5042">BAMAdsMovil</label>
+							</td>
+							<td>1,382,356,177</td>
+							<td>83,666,959</td>
+							<td>6.05%</td>
+							<td>593,060</td>
+							<td>0.71%</td>
+							<td>$1.00</td>
+							<td class="last">$83,746.62</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6450">BAMAdVine</label>
+							</td>
+							<td>5,766,335</td>
+							<td>15,134</td>
+							<td>0.26%</td>
+							<td>13</td>
+							<td>0.09%</td>
+							<td>$0.95</td>
+							<td class="last">$14.42</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5134">BAMAirkast</label>
+							</td>
+							<td>81,422,914</td>
+							<td>13,201,768</td>
+							<td>16.21%</td>
+							<td>23,364</td>
+							<td>0.18%</td>
+							<td>$0.83</td>
+							<td class="last">$10,893.80</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6829">BAMAirPush_SSP</label>
+							</td>
+							<td>44,238,581</td>
+							<td>1,685,803</td>
+							<td>3.81%</td>
+							<td>12,801</td>
+							<td>0.76%</td>
+							<td>$0.94</td>
+							<td class="last">$1,587.31</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5666">BamBatangaMedia</label>
+							</td>
+							<td>19,256,183</td>
+							<td>1,344,656</td>
+							<td>6.98%</td>
+							<td>11,883</td>
+							<td>0.88%</td>
+							<td>$1.83</td>
+							<td class="last">$2,467.31</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6644">BAMBauerMagazines</label>
+							</td>
+							<td>2,594,775</td>
+							<td>56,173</td>
+							<td>2.16%</td>
+							<td>65</td>
+							<td>0.12%</td>
+							<td>$1.46</td>
+							<td class="last">$82.26</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7318">BAMBeachfront_SSP</label>
+							</td>
+							<td>736,007</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7050">BAMBeanstalk</label>
+							</td>
+							<td>4,317,955,700</td>
+							<td>96,780,036</td>
+							<td>2.24%</td>
+							<td>24,276</td>
+							<td>0.03%</td>
+							<td>$1.10</td>
+							<td class="last">$106,111.37</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6150">BAMBitTorrent</label>
+							</td>
+							<td>23,705,578</td>
+							<td>4,972,276</td>
+							<td>20.98%</td>
+							<td>17,296</td>
+							<td>0.35%</td>
+							<td>$4.63</td>
+							<td class="last">$23,000.38</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7261">BAMBlackberryMessenger (BBM)</label>
+							</td>
+							<td>261,371,254</td>
+							<td>423,276</td>
+							<td>0.16%</td>
+							<td>7,020</td>
+							<td>1.66%</td>
+							<td>$1.17</td>
+							<td class="last">$493.32</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6664">BAMBonnier</label>
+							</td>
+							<td>3,019,074</td>
+							<td>294,345</td>
+							<td>9.75%</td>
+							<td>177</td>
+							<td>0.06%</td>
+							<td>$1.15</td>
+							<td class="last">$339.50</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5246">BAMBUONGIORNO</label>
+							</td>
+							<td>383,959,393</td>
+							<td>4,223,102</td>
+							<td>1.1%</td>
+							<td>31,707</td>
+							<td>0.75%</td>
+							<td>$2.75</td>
+							<td class="last">$11,628.70</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7160">BAMCaptiv8</label>
+							</td>
+							<td>6,803,859</td>
+							<td>351,494</td>
+							<td>5.17%</td>
+							<td>671</td>
+							<td>0.19%</td>
+							<td>$1.35</td>
+							<td class="last">$472.84</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5189">BAMCBS</label>
+							</td>
+							<td>2,005,245</td>
+							<td>36,827</td>
+							<td>1.84%</td>
+							<td>144</td>
+							<td>0.39%</td>
+							<td>$1.51</td>
+							<td class="last">$55.59</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5242">BAMCondenast</label>
+							</td>
+							<td>41,114</td>
+							<td>13,857</td>
+							<td>33.7%</td>
+							<td>148</td>
+							<td>1.07%</td>
+							<td>$0.93</td>
+							<td class="last">$12.94</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="4992">BAMCrunding</label>
+							</td>
+							<td>676,228,368</td>
+							<td>39,211,896</td>
+							<td>5.8%</td>
+							<td>72,256</td>
+							<td>0.18%</td>
+							<td>$1.45</td>
+							<td class="last">$56,941.55</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6968">BAMCurse</label>
+							</td>
+							<td>48,156,344</td>
+							<td>5,446,942</td>
+							<td>11.31%</td>
+							<td>5,803</td>
+							<td>0.11%</td>
+							<td>$5.18</td>
+							<td class="last">$28,207.27</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5715">BAMDemandMedia</label>
+							</td>
+							<td>208,892,639</td>
+							<td>7,992,375</td>
+							<td>3.83%</td>
+							<td>7,051</td>
+							<td>0.09%</td>
+							<td>$1.99</td>
+							<td class="last">$15,926.53</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5072">BAMDictionary.com</label>
+							</td>
+							<td>5,302,679</td>
+							<td>900,150</td>
+							<td>16.98%</td>
+							<td>10,986</td>
+							<td>1.22%</td>
+							<td>$1.32</td>
+							<td class="last">$1,189.20</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6190">BAMDoApp</label>
+							</td>
+							<td>70,092,063</td>
+							<td>7,185,871</td>
+							<td>10.25%</td>
+							<td>18,714</td>
+							<td>0.26%</td>
+							<td>$1.53</td>
+							<td class="last">$11,029.39</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5247">BamEveryDayHelath</label>
+							</td>
+							<td>1,062,335</td>
+							<td>125,252</td>
+							<td>11.79%</td>
+							<td>163</td>
+							<td>0.13%</td>
+							<td>$0.98</td>
+							<td class="last">$123.10</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7351">BAMFanatix</label>
+							</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6659">BAMFarragoComics</label>
+							</td>
+							<td>9,503</td>
+							<td>5,084</td>
+							<td>53.5%</td>
+							<td>23</td>
+							<td>0.45%</td>
+							<td>$1.96</td>
+							<td class="last">$9.94</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6794">BAMFitAd</label>
+							</td>
+							<td>6,296,402</td>
+							<td>625,072</td>
+							<td>9.93%</td>
+							<td>3,803</td>
+							<td>0.61%</td>
+							<td>$2.06</td>
+							<td class="last">$1,289.85</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7157">BAMFlashMedia</label>
+							</td>
+							<td>469</td>
+							<td>337</td>
+							<td>71.86%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$1.41</td>
+							<td class="last">$0.48</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6376">BAMFlipDog</label>
+							</td>
+							<td>102,998,130</td>
+							<td>2,012,861</td>
+							<td>1.95%</td>
+							<td>1,713</td>
+							<td>0.09%</td>
+							<td>$2.49</td>
+							<td class="last">$5,015.04</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5964">BAMFoxNews</label>
+							</td>
+							<td>11,001,467</td>
+							<td>1,005,647</td>
+							<td>9.14%</td>
+							<td>7,088</td>
+							<td>0.70%</td>
+							<td>$1.57</td>
+							<td class="last">$1,581.51</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5248">BAMFoxSports</label>
+							</td>
+							<td>855,500</td>
+							<td>216,634</td>
+							<td>25.32%</td>
+							<td>1,099</td>
+							<td>0.51%</td>
+							<td>$1.47</td>
+							<td class="last">$319.38</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6880">BAMFutureNet</label>
+							</td>
+							<td>24,128,591</td>
+							<td>701,161</td>
+							<td>2.91%</td>
+							<td>396</td>
+							<td>0.06%</td>
+							<td>$1.13</td>
+							<td class="last">$790.07</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6589">BAMGlumobile</label>
+							</td>
+							<td>1,517,316</td>
+							<td>722</td>
+							<td>0.05%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.87</td>
+							<td class="last">$0.63</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="4929">BAMGogii</label>
+							</td>
+							<td>1,152,361,635</td>
+							<td>127,937,534</td>
+							<td>11.1%</td>
+							<td>618,673</td>
+							<td>0.48%</td>
+							<td>$1.25</td>
+							<td class="last">$160,079.38</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7053">BAMHearst</label>
+							</td>
+							<td>685,608</td>
+							<td>18,531</td>
+							<td>2.7%</td>
+							<td>126</td>
+							<td>0.68%</td>
+							<td>$0.78</td>
+							<td class="last">$14.37</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5731">BAMHuntMobile</label>
+							</td>
+							<td>2,203,184,165</td>
+							<td>7,906,922</td>
+							<td>0.36%</td>
+							<td>106,073</td>
+							<td>1.34%</td>
+							<td>$1.31</td>
+							<td class="last">$10,396.22</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6345">BAMInnerActive/Buongiorno</label>
+							</td>
+							<td>28,484,156</td>
+							<td>152,828</td>
+							<td>0.54%</td>
+							<td>278</td>
+							<td>0.18%</td>
+							<td>$1.27</td>
+							<td class="last">$193.63</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6308">BAMInnerActive_SSP</label>
+							</td>
+							<td>2,260,420,404</td>
+							<td>58,894,946</td>
+							<td>2.61%</td>
+							<td>168,051</td>
+							<td>0.29%</td>
+							<td>$2.25</td>
+							<td class="last">$132,740.09</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6676">BAMJNGMedia</label>
+							</td>
+							<td>1,172,751</td>
+							<td>24,683</td>
+							<td>2.1%</td>
+							<td>1</td>
+							<td>0.00%</td>
+							<td>$0.98</td>
+							<td class="last">$24.09</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7273">BAMJumpRampGames</label>
+							</td>
+							<td>407,605</td>
+							<td>66,360</td>
+							<td>16.28%</td>
+							<td>1,239</td>
+							<td>1.87%</td>
+							<td>$5.49</td>
+							<td class="last">$364.27</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7118">BAMKWICK</label>
+							</td>
+							<td>1,438,153</td>
+							<td>3,206</td>
+							<td>0.22%</td>
+							<td>4</td>
+							<td>0.12%</td>
+							<td>$1.52</td>
+							<td class="last">$4.89</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6354">BAMMaddict</label>
+							</td>
+							<td>26,891,874</td>
+							<td>183,048</td>
+							<td>0.68%</td>
+							<td>3,866</td>
+							<td>2.11%</td>
+							<td>$4.88</td>
+							<td class="last">$892.59</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6631">BAMMailOnline</label>
+							</td>
+							<td>24,087,927</td>
+							<td>1,378,402</td>
+							<td>5.72%</td>
+							<td>2,737</td>
+							<td>0.20%</td>
+							<td>$4.96</td>
+							<td class="last">$6,839.97</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5519">BamMapmyfitness</label>
+							</td>
+							<td>31,641</td>
+							<td>13,766</td>
+							<td>43.51%</td>
+							<td>104</td>
+							<td>0.76%</td>
+							<td>$5.04</td>
+							<td class="last">$69.31</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7013">BAMMediaGroupofAmerica</label>
+							</td>
+							<td>3,906,582</td>
+							<td>138,303</td>
+							<td>3.54%</td>
+							<td>67</td>
+							<td>0.05%</td>
+							<td>$1.05</td>
+							<td class="last">$145.89</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="4964">BAMMeetMe</label>
+							</td>
+							<td>4,466,376,787</td>
+							<td>236,632,090</td>
+							<td>5.3%</td>
+							<td>201,321</td>
+							<td>0.09%</td>
+							<td>$0.97</td>
+							<td class="last">$230,057.56</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5001">BAMMLB</label>
+							</td>
+							<td>97,573,423</td>
+							<td>2,391,247</td>
+							<td>2.45%</td>
+							<td>1,778</td>
+							<td>0.07%</td>
+							<td>$2.48</td>
+							<td class="last">$5,931.03</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7077">BAMMobileDeluxe</label>
+							</td>
+							<td>46,859</td>
+							<td>16,631</td>
+							<td>35.49%</td>
+							<td>56</td>
+							<td>0.34%</td>
+							<td>$1.07</td>
+							<td class="last">$17.88</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6253">BAMMobilePosse</label>
+							</td>
+							<td>35</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5023">BAMMT</label>
+							</td>
+							<td>37,370,400,221</td>
+							<td>659,358,555</td>
+							<td>1.76%</td>
+							<td>2,656,386</td>
+							<td>0.40%</td>
+							<td>$1.56</td>
+							<td class="last">$1,027,962.87</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7147">BAMMTV</label>
+							</td>
+							<td>2,562,894</td>
+							<td>52,217</td>
+							<td>2.04%</td>
+							<td>43</td>
+							<td>0.08%</td>
+							<td>$7.90</td>
+							<td class="last">$412.45</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5801">BAMNage</label>
+							</td>
+							<td>7,165</td>
+							<td>880</td>
+							<td>12.28%</td>
+							<td>1</td>
+							<td>0.11%</td>
+							<td>$0.82</td>
+							<td class="last">$0.72</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5702">BAMOpera</label>
+							</td>
+							<td>22,337,521</td>
+							<td>46,788</td>
+							<td>0.21%</td>
+							<td>389</td>
+							<td>0.83%</td>
+							<td>$22.98</td>
+							<td class="last">$1,075.41</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="4977">BAMPandora</label>
+							</td>
+							<td>6,858,881,071</td>
+							<td>293,627,793</td>
+							<td>4.28%</td>
+							<td>1,406,894</td>
+							<td>0.48%</td>
+							<td>$0.96</td>
+							<td class="last">$282,146.45</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6177">BAMPerkScreen</label>
+							</td>
+							<td>1,583</td>
+							<td>915</td>
+							<td>57.8%</td>
+							<td>3</td>
+							<td>0.33%</td>
+							<td>$0.82</td>
+							<td class="last">$0.75</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5125">BAMPhotobucket</label>
+							</td>
+							<td>84,216,895</td>
+							<td>1,856,393</td>
+							<td>2.2%</td>
+							<td>6,060</td>
+							<td>0.33%</td>
+							<td>$1.91</td>
+							<td class="last">$3,543.62</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5215">BAMPinsightMedia</label>
+							</td>
+							<td>1,957,822,735</td>
+							<td>88,290,781</td>
+							<td>4.51%</td>
+							<td>2,229,222</td>
+							<td>2.52%</td>
+							<td>$2.43</td>
+							<td class="last">$214,543.05</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6278">BAMProdege</label>
+							</td>
+							<td>192,288,786</td>
+							<td>1,939,674</td>
+							<td>1.01%</td>
+							<td>458</td>
+							<td>0.02%</td>
+							<td>$6.13</td>
+							<td class="last">$11,890.98</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6830">BamRadioline</label>
+							</td>
+							<td>461</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5076">BAMShazam</label>
+							</td>
+							<td>111,985,394</td>
+							<td>9,633,111</td>
+							<td>8.6%</td>
+							<td>110,965</td>
+							<td>1.15%</td>
+							<td>$2.07</td>
+							<td class="last">$19,981.58</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5124">BAMSlacker</label>
+							</td>
+							<td>13,912,354</td>
+							<td>5,066,200</td>
+							<td>36.42%</td>
+							<td>61,535</td>
+							<td>1.21%</td>
+							<td>$0.95</td>
+							<td class="last">$4,810.94</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5720">BAMSmaato_SSP</label>
+							</td>
+							<td>156,350,668</td>
+							<td>727,212</td>
+							<td>0.47%</td>
+							<td>164</td>
+							<td>0.02%</td>
+							<td>$0.82</td>
+							<td class="last">$595.81</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6896">BAMSnagAJob</label>
+							</td>
+							<td>783,439</td>
+							<td>63,876</td>
+							<td>8.15%</td>
+							<td>46</td>
+							<td>0.07%</td>
+							<td>$1.04</td>
+							<td class="last">$66.63</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6277">BAMSolebon</label>
+							</td>
+							<td>19,051,644</td>
+							<td>448,230</td>
+							<td>2.35%</td>
+							<td>1,853</td>
+							<td>0.41%</td>
+							<td>$6.62</td>
+							<td class="last">$2,968.50</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5135">BAMSoundhound</label>
+							</td>
+							<td>30,297,658</td>
+							<td>6,951,700</td>
+							<td>22.94%</td>
+							<td>12,010</td>
+							<td>0.17%</td>
+							<td>$1.17</td>
+							<td class="last">$8,104.42</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5249">BAMStepleader</label>
+							</td>
+							<td>16,860,935</td>
+							<td>3,344,436</td>
+							<td>19.84%</td>
+							<td>16,448</td>
+							<td>0.49%</td>
+							<td>$0.82</td>
+							<td class="last">$2,735.24</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7178">BAMStitcher</label>
+							</td>
+							<td>53,117,686</td>
+							<td>964,208</td>
+							<td>1.82%</td>
+							<td>313</td>
+							<td>0.03%</td>
+							<td>$1.11</td>
+							<td class="last">$1,069.43</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6643">BAMStreamTrack</label>
+							</td>
+							<td>238,879</td>
+							<td>85,549</td>
+							<td>35.81%</td>
+							<td>596</td>
+							<td>0.70%</td>
+							<td>$1.05</td>
+							<td class="last">$89.72</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6683">BAMTelegraph</label>
+							</td>
+							<td>5,315,340</td>
+							<td>262,729</td>
+							<td>4.94%</td>
+							<td>547</td>
+							<td>0.21%</td>
+							<td>$0.96</td>
+							<td class="last">$251.51</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7325">BAMTest</label>
+							</td>
+							<td>4</td>
+							<td>2</td>
+							<td>50%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$7.00</td>
+							<td class="last">$0.01</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7072">BAMThreesixtyfive(365)</label>
+							</td>
+							<td>5,566,827</td>
+							<td>346,438</td>
+							<td>6.22%</td>
+							<td>4,423</td>
+							<td>1.28%</td>
+							<td>$1.61</td>
+							<td class="last">$557.72</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6139">BAMThumbtribe</label>
+							</td>
+							<td>2,191,431</td>
+							<td>42,944</td>
+							<td>1.96%</td>
+							<td>65</td>
+							<td>0.15%</td>
+							<td>$0.57</td>
+							<td class="last">$24.62</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6950">BAMTotalBeauty</label>
+							</td>
+							<td>43,854</td>
+							<td>8,360</td>
+							<td>19.06%</td>
+							<td>18</td>
+							<td>0.22%</td>
+							<td>$0.51</td>
+							<td class="last">$4.26</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5707">BAMTVGuide</label>
+							</td>
+							<td>22,255,370</td>
+							<td>4,403,017</td>
+							<td>19.78%</td>
+							<td>36,143</td>
+							<td>0.82%</td>
+							<td>$1.40</td>
+							<td class="last">$6,142.50</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5000">BAMTweetcaster</label>
+							</td>
+							<td>203,436,988</td>
+							<td>14,057,437</td>
+							<td>6.91%</td>
+							<td>50,252</td>
+							<td>0.36%</td>
+							<td>$1.78</td>
+							<td class="last">$25,066.04</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6360">BAMUbertwitter</label>
+							</td>
+							<td>4,745,860</td>
+							<td>85,992</td>
+							<td>1.81%</td>
+							<td>119</td>
+							<td>0.14%</td>
+							<td>$2.72</td>
+							<td class="last">$233.63</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6259">BAMUNIVISION</label>
+							</td>
+							<td>25,089,844</td>
+							<td>1,387,092</td>
+							<td>5.53%</td>
+							<td>3,780</td>
+							<td>0.27%</td>
+							<td>$1.15</td>
+							<td class="last">$1,598.68</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6472">BAMValeo</label>
+							</td>
+							<td>227</td>
+							<td>112</td>
+							<td>49.34%</td>
+							<td>2</td>
+							<td>1.79%</td>
+							<td>$3.81</td>
+							<td class="last">$0.43</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5961">BAMVerve_SSP</label>
+							</td>
+							<td>47,432,729</td>
+							<td>2,779,351</td>
+							<td>5.86%</td>
+							<td>24,765</td>
+							<td>0.89%</td>
+							<td>$1.11</td>
+							<td class="last">$3,081.09</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5119">BAMWeatherbug</label>
+							</td>
+							<td>1,696,881,784</td>
+							<td>84,342,066</td>
+							<td>4.97%</td>
+							<td>437,835</td>
+							<td>0.52%</td>
+							<td>$2.62</td>
+							<td class="last">$221,057.97</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7187">BAMWeightwatchers</label>
+							</td>
+							<td>802,609</td>
+							<td>18,338</td>
+							<td>2.28%</td>
+							<td>51</td>
+							<td>0.28%</td>
+							<td>$1.89</td>
+							<td class="last">$34.66</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6886">BAMWhatWapp</label>
+							</td>
+							<td>18,794,134</td>
+							<td>1,630,485</td>
+							<td>8.68%</td>
+							<td>10,647</td>
+							<td>0.65%</td>
+							<td>$1.66</td>
+							<td class="last">$2,710.40</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5128">BAMWhitePages</label>
+							</td>
+							<td>13,557,190</td>
+							<td>488,727</td>
+							<td>3.6%</td>
+							<td>3,059</td>
+							<td>0.63%</td>
+							<td>$1.14</td>
+							<td class="last">$558.21</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6844">BAMxAd_SSP</label>
+							</td>
+							<td>4,412</td>
+							<td>4</td>
+							<td>0.09%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$3.20</td>
+							<td class="last">$0.01</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6665">BAMYashi_SSP</label>
+							</td>
+							<td>36,740,923</td>
+							<td>33,704</td>
+							<td>0.09%</td>
+							<td>23</td>
+							<td>0.07%</td>
+							<td>$9.82</td>
+							<td class="last">$330.88</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5711">BAMZeptoLabs</label>
+							</td>
+							<td>6,422,170</td>
+							<td>394,341</td>
+							<td>6.14%</td>
+							<td>4,959</td>
+							<td>1.26%</td>
+							<td>$5.30</td>
+							<td class="last">$2,088.42</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6532">Batanga Media</label>
+							</td>
+							<td>2,710,154</td>
+							<td>1,424,527</td>
+							<td>52.56%</td>
+							<td>12,048</td>
+							<td>0.85%</td>
+							<td>$1.37</td>
+							<td class="last">$1,956.88</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7036">Beachfront_SSP</label>
+							</td>
+							<td>217,101,197</td>
+							<td>1,237,582</td>
+							<td>0.57%</td>
+							<td>890</td>
+							<td>0.07%</td>
+							<td>$8.24</td>
+							<td class="last">$10,199.40</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6033">Binnie Media</label>
+							</td>
+							<td>46,195</td>
+							<td>25,682</td>
+							<td>55.59%</td>
+							<td>21</td>
+							<td>0.08%</td>
+							<td>$0.76</td>
+							<td class="last">$19.49</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5899">Bonten Media Group</label>
+							</td>
+							<td>956,893</td>
+							<td>879,041</td>
+							<td>91.86%</td>
+							<td>4,032</td>
+							<td>0.46%</td>
+							<td>$0.53</td>
+							<td class="last">$468.24</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5896">Boston Herald </label>
+							</td>
+							<td>1,691,954</td>
+							<td>213,240</td>
+							<td>12.6%</td>
+							<td>610</td>
+							<td>0.29%</td>
+							<td>$0.99</td>
+							<td class="last">$211.14</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6035">Broadcast One</label>
+							</td>
+							<td>6,051</td>
+							<td>5,805</td>
+							<td>95.93%</td>
+							<td>3</td>
+							<td>0.05%</td>
+							<td>$0.61</td>
+							<td class="last">$3.54</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6036">Bryan Broadcasting</label>
+							</td>
+							<td>3,369</td>
+							<td>3,046</td>
+							<td>90.41%</td>
+							<td>1</td>
+							<td>0.03%</td>
+							<td>$0.53</td>
+							<td class="last">$1.60</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6037">Buckley Broadcasting</label>
+							</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5904">Capital Broadcasting</label>
+							</td>
+							<td>97,724</td>
+							<td>88,337</td>
+							<td>90.39%</td>
+							<td>441</td>
+							<td>0.50%</td>
+							<td>$0.61</td>
+							<td class="last">$54.02</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5880">CBS Radio News</label>
+							</td>
+							<td>658,607</td>
+							<td>222,447</td>
+							<td>33.78%</td>
+							<td>429</td>
+							<td>0.19%</td>
+							<td>$0.78</td>
+							<td class="last">$173.78</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5103">Certengg-test-publisher</label>
+							</td>
+							<td>535</td>
+							<td>131</td>
+							<td>24.49%</td>
+							<td>14</td>
+							<td>10.69%</td>
+							<td>$4.39</td>
+							<td class="last">$0.57</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5891">ComCorp USA</label>
+							</td>
+							<td>1,130,757</td>
+							<td>588,938</td>
+							<td>52.08%</td>
+							<td>2,716</td>
+							<td>0.46%</td>
+							<td>$0.54</td>
+							<td class="last">$320.53</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6038">Compass Radio Group</label>
+							</td>
+							<td>144</td>
+							<td>15</td>
+							<td>10.42%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.56</td>
+							<td class="last">$0.01</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6039">Connoisseur Media</label>
+							</td>
+							<td>43,084</td>
+							<td>54</td>
+							<td>0.13%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$2.70</td>
+							<td class="last">$0.15</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6040">Cooper Broadcasting</label>
+							</td>
+							<td>351</td>
+							<td>343</td>
+							<td>97.72%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.69</td>
+							<td class="last">$0.24</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5900">Cowles California Media</label>
+							</td>
+							<td>200,677</td>
+							<td>182,300</td>
+							<td>90.84%</td>
+							<td>1,029</td>
+							<td>0.56%</td>
+							<td>$0.58</td>
+							<td class="last">$104.99</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5901">Cox Media Group</label>
+							</td>
+							<td>309,569</td>
+							<td>273,941</td>
+							<td>88.49%</td>
+							<td>931</td>
+							<td>0.34%</td>
+							<td>$0.64</td>
+							<td class="last">$175.26</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5273">Crunding</label>
+							</td>
+							<td>39,946,060</td>
+							<td>39,034,417</td>
+							<td>97.72%</td>
+							<td>71,723</td>
+							<td>0.18%</td>
+							<td>$1.06</td>
+							<td class="last">$41,444.57</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5879">Cumulus</label>
+							</td>
+							<td>14,240,986</td>
+							<td>6,456,015</td>
+							<td>45.33%</td>
+							<td>15,074</td>
+							<td>0.23%</td>
+							<td>$0.64</td>
+							<td class="last">$4,154.35</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6041">Curtis Media Group</label>
+							</td>
+							<td>151,118</td>
+							<td>59,315</td>
+							<td>39.25%</td>
+							<td>110</td>
+							<td>0.19%</td>
+							<td>$0.62</td>
+							<td class="last">$36.79</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6042">Delmarva Broadcasting</label>
+							</td>
+							<td>105,052</td>
+							<td>38,418</td>
+							<td>36.57%</td>
+							<td>37</td>
+							<td>0.10%</td>
+							<td>$0.76</td>
+							<td class="last">$29.02</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5894">Detroit Media Partnership</label>
+							</td>
+							<td>476</td>
+							<td>34</td>
+							<td>7.14%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$1.00</td>
+							<td class="last">$0.03</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5690">Dictionary.com</label>
+							</td>
+							<td>819,764</td>
+							<td>767,225</td>
+							<td>93.59%</td>
+							<td>9,866</td>
+							<td>1.29%</td>
+							<td>$0.88</td>
+							<td class="last">$677.51</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5882">DIRECTV</label>
+							</td>
+							<td>1,391,555</td>
+							<td>713,064</td>
+							<td>51.24%</td>
+							<td>774</td>
+							<td>0.11%</td>
+							<td>$0.78</td>
+							<td class="last">$558.97</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6043">Domestic Church Media</label>
+							</td>
+							<td>161</td>
+							<td>158</td>
+							<td>98.14%</td>
+							<td>6</td>
+							<td>3.80%</td>
+							<td>$0.64</td>
+							<td class="last">$0.10</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5617">Echofon</label>
+							</td>
+							<td>7,098,007</td>
+							<td>241,665</td>
+							<td>3.4%</td>
+							<td>339</td>
+							<td>0.14%</td>
+							<td>$0.99</td>
+							<td class="last">$240.17</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6044">Emerson College</label>
+							</td>
+							<td>106</td>
+							<td>97</td>
+							<td>91.51%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.59</td>
+							<td class="last">$0.06</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5271">Enflick</label>
+							</td>
+							<td>793,067,375</td>
+							<td>11,398,517</td>
+							<td>1.44%</td>
+							<td>36,090</td>
+							<td>0.32%</td>
+							<td>$0.96</td>
+							<td class="last">$10,947.13</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6045">Flinn Broadcasting</label>
+							</td>
+							<td>15,626</td>
+							<td>15,533</td>
+							<td>99.4%</td>
+							<td>22</td>
+							<td>0.14%</td>
+							<td>$0.57</td>
+							<td class="last">$8.80</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5637">FOX</label>
+							</td>
+							<td>291</td>
+							<td>18</td>
+							<td>6.19%</td>
+							<td>1</td>
+							<td>5.56%</td>
+							<td>$1.00</td>
+							<td class="last">$0.02</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5884">Fox News Radio</label>
+							</td>
+							<td>2,471,465</td>
+							<td>1,054,919</td>
+							<td>42.68%</td>
+							<td>837</td>
+							<td>0.08%</td>
+							<td>$0.65</td>
+							<td class="last">$683.47</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5897">Fox Television Stations, Inc.</label>
+							</td>
+							<td>32,145</td>
+							<td>29,339</td>
+							<td>91.27%</td>
+							<td>188</td>
+							<td>0.64%</td>
+							<td>$0.59</td>
+							<td class="last">$17.26</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="4803">Frengo</label>
+							</td>
+							<td>5,494</td>
+							<td>3,464</td>
+							<td>63.05%</td>
+							<td>96</td>
+							<td>2.77%</td>
+							<td>$1.54</td>
+							<td class="last">$5.32</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6046">Grand Slam Sports</label>
+							</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6048">Greater Media</label>
+							</td>
+							<td>49</td>
+							<td>30</td>
+							<td>61.22%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.53</td>
+							<td class="last">$0.02</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6049">Hall Communications</label>
+							</td>
+							<td>152,500</td>
+							<td>63,540</td>
+							<td>41.67%</td>
+							<td>66</td>
+							<td>0.10%</td>
+							<td>$0.69</td>
+							<td class="last">$43.77</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5881">Hubbard Broadcasting</label>
+							</td>
+							<td>1,168,190</td>
+							<td>282,979</td>
+							<td>24.22%</td>
+							<td>235</td>
+							<td>0.08%</td>
+							<td>$1.02</td>
+							<td class="last">$288.99</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5903">ICA Broadcasting</label>
+							</td>
+							<td>373,214</td>
+							<td>334,101</td>
+							<td>89.52%</td>
+							<td>2,111</td>
+							<td>0.63%</td>
+							<td>$0.63</td>
+							<td class="last">$209.22</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6050">Jackson Radio Works</label>
+							</td>
+							<td>130</td>
+							<td>124</td>
+							<td>95.38%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.41</td>
+							<td class="last">$0.05</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6051">JMJ Broadcasting</label>
+							</td>
+							<td>9,702</td>
+							<td>9,555</td>
+							<td>98.48%</td>
+							<td>10</td>
+							<td>0.10%</td>
+							<td>$0.62</td>
+							<td class="last">$5.89</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6052">Journal Broadcasting</label>
+							</td>
+							<td>3,111</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6053">Los Angeles Angels Radio Network</label>
+							</td>
+							<td>22,681</td>
+							<td>14</td>
+							<td>0.06%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$2.70</td>
+							<td class="last">$0.04</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6054">Lotus Las Vegas</label>
+							</td>
+							<td>11,833</td>
+							<td>11,645</td>
+							<td>98.41%</td>
+							<td>11</td>
+							<td>0.09%</td>
+							<td>$0.58</td>
+							<td class="last">$6.81</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6056">Manning Broadcasting</label>
+							</td>
+							<td>7,111</td>
+							<td>7,004</td>
+							<td>98.5%</td>
+							<td>15</td>
+							<td>0.21%</td>
+							<td>$0.69</td>
+							<td class="last">$4.80</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5902">Maranatha Broadcasting Company, Inc.</label>
+							</td>
+							<td>769,595</td>
+							<td>727,667</td>
+							<td>94.55%</td>
+							<td>3,475</td>
+							<td>0.48%</td>
+							<td>$0.65</td>
+							<td class="last">$473.01</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6057">Max Media</label>
+							</td>
+							<td>3,564</td>
+							<td>3,406</td>
+							<td>95.57%</td>
+							<td>1</td>
+							<td>0.03%</td>
+							<td>$0.67</td>
+							<td class="last">$2.29</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6059">Meyer Comms</label>
+							</td>
+							<td>8,575</td>
+							<td>7,709</td>
+							<td>89.9%</td>
+							<td>8</td>
+							<td>0.10%</td>
+							<td>$0.60</td>
+							<td class="last">$4.59</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6060">Mid-West Family</label>
+							</td>
+							<td>44,729</td>
+							<td>18,028</td>
+							<td>40.3%</td>
+							<td>17</td>
+							<td>0.09%</td>
+							<td>$0.70</td>
+							<td class="last">$12.68</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6061">Mid-West Television</label>
+							</td>
+							<td>274,789</td>
+							<td>116,535</td>
+							<td>42.41%</td>
+							<td>100</td>
+							<td>0.09%</td>
+							<td>$0.70</td>
+							<td class="last">$81.18</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5905">Midwest Television</label>
+							</td>
+							<td>45,555</td>
+							<td>40,815</td>
+							<td>89.59%</td>
+							<td>236</td>
+							<td>0.58%</td>
+							<td>$0.63</td>
+							<td class="last">$25.75</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6062">Millennium Radio</label>
+							</td>
+							<td>58,799</td>
+							<td>19,838</td>
+							<td>33.74%</td>
+							<td>68</td>
+							<td>0.34%</td>
+							<td>$0.76</td>
+							<td class="last">$15.16</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6063">Milwaukee Radio Alliance</label>
+							</td>
+							<td>17,022</td>
+							<td>6,367</td>
+							<td>37.4%</td>
+							<td>4</td>
+							<td>0.06%</td>
+							<td>$0.75</td>
+							<td class="last">$4.77</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6289">MLB</label>
+							</td>
+							<td>53,926,741</td>
+							<td>899,662</td>
+							<td>1.67%</td>
+							<td>4,528</td>
+							<td>0.50%</td>
+							<td>$1.10</td>
+							<td class="last">$989.63</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5893">Mobile Local News</label>
+							</td>
+							<td>39,816,209</td>
+							<td>8,437,733</td>
+							<td>21.19%</td>
+							<td>23,042</td>
+							<td>0.27%</td>
+							<td>$1.01</td>
+							<td class="last">$8,511.49</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5898">Morgan Murphy</label>
+							</td>
+							<td>1,865</td>
+							<td>1,705</td>
+							<td>91.42%</td>
+							<td>17</td>
+							<td>1.00%</td>
+							<td>$0.59</td>
+							<td class="last">$1.01</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6064">Nassau Broadcasting</label>
+							</td>
+							<td>9,977</td>
+							<td>4,337</td>
+							<td>43.47%</td>
+							<td>7</td>
+							<td>0.16%</td>
+							<td>$0.68</td>
+							<td class="last">$2.97</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5424">NBC</label>
+							</td>
+							<td>59</td>
+							<td>13</td>
+							<td>22.03%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$1.00</td>
+							<td class="last">$0.01</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6065">NextMedia Group</label>
+							</td>
+							<td>294,198</td>
+							<td>127,552</td>
+							<td>43.36%</td>
+							<td>115</td>
+							<td>0.09%</td>
+							<td>$0.69</td>
+							<td class="last">$87.67</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6066">NRG Media</label>
+							</td>
+							<td>380,990</td>
+							<td>149,453</td>
+							<td>39.23%</td>
+							<td>212</td>
+							<td>0.14%</td>
+							<td>$0.65</td>
+							<td class="last">$96.97</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6067">Omaha World-Herald Company</label>
+							</td>
+							<td>14,533</td>
+							<td>6</td>
+							<td>0.04%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$2.70</td>
+							<td class="last">$0.02</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="4802">OMAX Bidder Affiliate</label>
+							</td>
+							<td>69,352,225,021</td>
+							<td>1,950,902,386</td>
+							<td>2.81%</td>
+							<td>9,278,532</td>
+							<td>0.48%</td>
+							<td>$1.48</td>
+							<td class="last">$2,889,184.47</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6890">Opera RTB Test Pub1</label>
+							</td>
+							<td>2,308</td>
+							<td>2,057</td>
+							<td>89.12%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$5.25</td>
+							<td class="last">$10.80</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5928">Opera RTB Test Pub1</label>
+							</td>
+							<td>40</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>2</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6069">Palm Beach Broadcasting</label>
+							</td>
+							<td>22,477</td>
+							<td>12,261</td>
+							<td>54.55%</td>
+							<td>7</td>
+							<td>0.06%</td>
+							<td>$0.63</td>
+							<td class="last">$7.70</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5261">Photobucket</label>
+							</td>
+							<td>3,902,724</td>
+							<td>556,012</td>
+							<td>14.25%</td>
+							<td>4,715</td>
+							<td>0.85%</td>
+							<td>$1.03</td>
+							<td class="last">$572.07</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6071">Principal Broadcasting</label>
+							</td>
+							<td>6</td>
+							<td>6</td>
+							<td>100%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.43</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="7047">PSM+ Zynga</label>
+							</td>
+							<td>1,164,186</td>
+							<td>1,014,887</td>
+							<td>87.18%</td>
+							<td>803</td>
+							<td>0.08%</td>
+							<td>$4.05</td>
+							<td class="last">$4,110.04</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5874">Radio One</label>
+							</td>
+							<td>7,145,902</td>
+							<td>2,109,816</td>
+							<td>29.52%</td>
+							<td>1,428</td>
+							<td>0.07%</td>
+							<td>$0.69</td>
+							<td class="last">$1,447.47</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5883">Reach Media</label>
+							</td>
+							<td>5,716,325</td>
+							<td>2,808,107</td>
+							<td>49.12%</td>
+							<td>3,752</td>
+							<td>0.13%</td>
+							<td>$0.79</td>
+							<td class="last">$2,223.49</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6073">Results Radio</label>
+							</td>
+							<td>191</td>
+							<td>186</td>
+							<td>97.38%</td>
+							<td>3</td>
+							<td>1.61%</td>
+							<td>$0.74</td>
+							<td class="last">$0.14</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6237">Roop2</label>
+							</td>
+							<td>122</td>
+							<td>53</td>
+							<td>43.44%</td>
+							<td>3</td>
+							<td>5.66%</td>
+							<td>$5.02</td>
+							<td class="last">$0.27</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6764">Roopali</label>
+							</td>
+							<td>28</td>
+							<td>25</td>
+							<td>89.29%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$4.14</td>
+							<td class="last">$0.10</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6076">Saga Communications</label>
+							</td>
+							<td>75</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6077">Service Broadcasting</label>
+							</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6078">Sinclair</label>
+							</td>
+							<td>70,929</td>
+							<td>30,046</td>
+							<td>42.36%</td>
+							<td>21</td>
+							<td>0.07%</td>
+							<td>$0.71</td>
+							<td class="last">$21.39</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5892">Sinclair</label>
+							</td>
+							<td>51,072</td>
+							<td>46,095</td>
+							<td>90.25%</td>
+							<td>253</td>
+							<td>0.55%</td>
+							<td>$0.65</td>
+							<td class="last">$29.96</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6079">SJ Broadcasting</label>
+							</td>
+							<td>3,862</td>
+							<td>3,806</td>
+							<td>98.55%</td>
+							<td>3</td>
+							<td>0.08%</td>
+							<td>$0.66</td>
+							<td class="last">$2.51</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5877">slackerpub</label>
+							</td>
+							<td>4,226,587</td>
+							<td>4,006,151</td>
+							<td>94.78%</td>
+							<td>47,153</td>
+							<td>1.18%</td>
+							<td>$0.65</td>
+							<td class="last">$2,602.80</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6010">Solebon</label>
+							</td>
+							<td>538,110</td>
+							<td>443,677</td>
+							<td>82.45%</td>
+							<td>1,836</td>
+							<td>0.41%</td>
+							<td>$5.18</td>
+							<td class="last">$2,296.72</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6824">Sound Hound</label>
+							</td>
+							<td>12,552,441</td>
+							<td>6,370,005</td>
+							<td>50.75%</td>
+							<td>11,604</td>
+							<td>0.18%</td>
+							<td>$0.86</td>
+							<td class="last">$5,476.30</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5652">Sunbeam</label>
+							</td>
+							<td>3</td>
+							<td>1</td>
+							<td>33.33%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$1.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="4839">Test Pub Account-SG</label>
+							</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6731">TheBlaze</label>
+							</td>
+							<td>7,740,470</td>
+							<td>2,127,261</td>
+							<td>27.48%</td>
+							<td>2,501</td>
+							<td>0.12%</td>
+							<td>$3.64</td>
+							<td class="last">$7,752.92</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6082">Three Eagles Comms</label>
+							</td>
+							<td>10,663</td>
+							<td>10,429</td>
+							<td>97.81%</td>
+							<td>18</td>
+							<td>0.17%</td>
+							<td>$0.61</td>
+							<td class="last">$6.39</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6084">Townsquare Media</label>
+							</td>
+							<td>18,981</td>
+							<td>18,913</td>
+							<td>99.64%</td>
+							<td>19</td>
+							<td>0.10%</td>
+							<td>$0.63</td>
+							<td class="last">$11.98</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="5618">Ubertwitter</label>
+							</td>
+							<td>11,901,738</td>
+							<td>853,860</td>
+							<td>7.17%</td>
+							<td>3,530</td>
+							<td>0.41%</td>
+							<td>$1.05</td>
+							<td class="last">$894.69</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6085">University of Florida</label>
+							</td>
+							<td>13,271</td>
+							<td>261</td>
+							<td>1.97%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.57</td>
+							<td class="last">$0.15</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="7189">User - Native Ads</label>
+							</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6086">Voice America</label>
+							</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0%</td>
+							<td>0</td>
+							<td>0.00%</td>
+							<td>$0.00</td>
+							<td class="last">$0.00</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6087">West Virginia Radio</label>
+							</td>
+							<td>207,297</td>
+							<td>73,647</td>
+							<td>35.53%</td>
+							<td>69</td>
+							<td>0.09%</td>
+							<td>$0.74</td>
+							<td class="last">$54.29</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="5213">WhitepagesPub</label>
+							</td>
+							<td>4,058,074</td>
+							<td>743,168</td>
+							<td>18.31%</td>
+							<td>4,497</td>
+							<td>0.61%</td>
+							<td>$0.85</td>
+							<td class="last">$633.65</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6088">Wilks Broadcasting</label>
+							</td>
+							<td>203,914</td>
+							<td>82,727</td>
+							<td>40.57%</td>
+							<td>79</td>
+							<td>0.10%</td>
+							<td>$0.71</td>
+							<td class="last">$58.96</td>
+						</tr>
+						<tr class="odd">
+							<td class="first">
+	                            <label title="6090">WRD Entertainment</label>
+							</td>
+							<td>1,435</td>
+							<td>1,419</td>
+							<td>98.89%</td>
+							<td>2</td>
+							<td>0.14%</td>
+							<td>$0.62</td>
+							<td class="last">$0.88</td>
+						</tr>
+						<tr class="even">
+							<td class="first">
+	                            <label title="6528">xAD_SSP</label>
+							</td>
+							<td>939,266,580</td>
+							<td>8,788,134</td>
+							<td>0.94%</td>
+							<td>135,625</td>
+							<td>1.54%</td>
+							<td>$2.60</td>
+							<td class="last">$22,854.36</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr class="totals">
+							<td class="first"><strong>Totals</strong></td>
+							<td>138,787,116,343</td>
+							<td>3,978,655,631</td>
+							<td>2.87%</td>
+							<td>18,994,128</td>
+							<td>0.48%</td>
+							<td>$1.47</td>
+							<td class="last">$5,865,483.49</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!-- ends table content -->
+
+
+
+
+
+
+			</div><!-- ends table -->
+			<div id="ftr">
+		Current time is 04/15, 20:54 GMT. Last data refreshed at 04/15, 20:00 GMT.			</div>
+	</div>
+	</div> <!-- end #bdy_content -->
+
+
+
+	<!--jquery-->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
